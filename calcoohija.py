@@ -28,9 +28,9 @@ if __name__ == "__main__":
         result = calculadora.plus(op1, op2)
     elif sys.argv[2] == "resta":
         result = calculadora.minus(op1, op2)
-    elif sys.argv[2] == "multiplicacion":
+    elif sys.argv[2] == "multiplica":
         result = calculadora.mult(op1, op2)
-    elif sys.argv[2] == "division":
+    elif sys.argv[2] == "divide":
         if op2 != 0:
             result = calculadora.div(op1, op2)
         else:
