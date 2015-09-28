@@ -14,7 +14,7 @@ if __name__ == "__main__":
         op1 = int(sys.argv[1])
         op2 = int(sys.argv[3])
     except ValueError:
-        sys.exit("Error:Non numerical parameters")
+        sys.exit("Error: Non numerical parameters")
 
     calculadora = Calculadora()
 
