@@ -29,6 +29,6 @@ if __name__ == "__main__":
         if op2 != 0:
             result = calculadora.div(op1, op2)
         else:
-            sys.exit('Division by zero is not allowed')
+            sys.exit('Division by zero is not allowed ')
 
     print(result)
