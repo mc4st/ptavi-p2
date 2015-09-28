@@ -2,14 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import calcoo
 
-class Calculadora():
-    def plus(self, op1, op2):
-        return op1 + op2
-    def minus(self, op1, op2):
-        return op1 - op2
-
-class CalculadoraHija(Calculadora):
+class CalculadoraHija(calcoo.Calculadora):
     def mult(self, op1, op2):
         return op1 * op2
     def div(self, op1, op2):
@@ -35,4 +30,5 @@ if __name__ == "__main__":
             result = calculadora.div(op1, op2)
         else:
             sys.exit('Division by zero is not allowed')
+
     print(result)
