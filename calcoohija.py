@@ -8,7 +8,10 @@ class CalculadoraHija(calcoo.Calculadora):
     def mult(self, op1, op2):
         return op1 * op2
     def div(self, op1, op2):
-        return op1 / op2
+        if op2 != 0:
+            return op1 / op2
+        else:
+            sys.exit('Division by zero is not allowed ')
 
 if __name__ == "__main__":
     try:
@@ -26,9 +29,5 @@ if __name__ == "__main__":
     elif sys.argv[2] == "multiplica":
         result = calculadora.mult(op1, op2)
     elif sys.argv[2] == "divide":
-        if op2 != 0:
-            result = calculadora.div(op1, op2)
-        else:
-            sys.exit('Division by zero is not allowed ')
-
+        result = calculadora.div(op1, op2)
     print(result)
