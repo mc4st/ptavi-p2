@@ -11,9 +11,7 @@ with open(sys.argv[1]) as csvarchivo:
     lineas = csv.reader(csvarchivo)
     try:
         for linea in lineas:
-            print(linea)
             operacion = linea[0]
-            print(operacion)
             if operacion == "suma":
                 suma = 0
                 for operandos in linea[1:]:
