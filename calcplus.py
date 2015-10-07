@@ -5,6 +5,7 @@ import sys
 import calcoohija
 
 if __name__ == "__main__":
+
     fich = open(sys.argv[1], "r")
     lineas = fich.readlines()
     calc = calcoohija.CalculadoraHija()
