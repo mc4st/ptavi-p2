@@ -5,9 +5,11 @@ import sys
 import calcoo
 
 class CalculadoraHija(calcoo.Calculadora):
+
     def mult(self, op1, op2):
         op1, op2 = self.check(op1, op2)
         return op1 * op2
+
     def div(self, op1, op2):
         op1, op2 = self.check(op1, op2)
         if op2 != 0:
@@ -16,6 +18,7 @@ class CalculadoraHija(calcoo.Calculadora):
             sys.exit('Division by zero is not allowed ')
 
 if __name__ == "__main__":
+
     try:
         op1 = int(sys.argv[1])
         op2 = int(sys.argv[3])
