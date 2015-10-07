@@ -8,6 +8,7 @@ import calcoohija
 calc = calcoohija.CalculadoraHija()
 
 with open(sys.argv[1]) as csvarchivo:
+
     lineas = csv.reader(csvarchivo)
     try:
         for linea in lineas:
