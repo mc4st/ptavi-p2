@@ -7,8 +7,8 @@ import sys
 class Calculadora():
     def check(self, op1, op2):
         try:
-            op1 = int(sys.argv[1])
-            op2 = int(sys.argv[3])
+            op1 = int(op1)
+            op2 = int(op2)
         except ValueError:
             sys.exit("Error:Non numerical parameters")
         return op1, op2
