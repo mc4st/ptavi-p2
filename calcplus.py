@@ -13,7 +13,7 @@ if __name__ == "__main__":
     for linea in lineas:
         datos = linea.split(',')
         operacion = datos[0]
-        diccoperandos = {"suma": calc.plus, "resta": calc.minus, 
+        diccoperandos = {"suma": calc.plus, "resta": calc.minus,
                          "multiplica": calc.mult, "divide": calc.div}
         if operacion in ["suma", "resta", "multiplica", "divide"]:
             solucion = datos[1]
